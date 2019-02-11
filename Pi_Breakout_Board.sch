@@ -593,9 +593,9 @@ Connection ~ 4350 7550
 Wire Wire Line
 	4350 7550 4250 7550
 Text GLabel 2450 5550 0    50   Input ~ 0
-SDA1
+SDA0
 Text GLabel 2450 5450 0    50   Input ~ 0
-SCL1
+SCL0
 $Comp
 L Device:R R9
 U 1 1 5C5CE7D8
