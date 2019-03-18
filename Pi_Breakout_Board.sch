@@ -92,8 +92,6 @@ Wire Wire Line
 	3350 3050 3250 3050
 Text GLabel 3300 3150 2    50   Input ~ 0
 MISO0
-Text GLabel 3300 3250 2    50   Input ~ 0
-MOSI0
 Text GLabel 3300 3350 2    50   Input ~ 0
 SCLK0
 Text GLabel 3400 2250 2    50   Input ~ 0
@@ -1309,7 +1307,7 @@ Property GA/Team OTheRS
 Text Notes 7400 7500 0    50   ~ 0
 Pi Breakout Board
 Text Notes 10600 7650 0    50   ~ 0
-0
+3
 Text Label 5300 5750 0    50   ~ 0
 pwr1
 Text Label 5300 5250 0    50   ~ 0
@@ -1886,8 +1884,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 3150 3200 3150
 Wire Wire Line
-	2850 3250 3150 3250
-Wire Wire Line
 	2850 3350 3100 3350
 $Comp
 L Connector:TestPoint TP1
@@ -1898,17 +1894,6 @@ F 1 "TestPoint" H 3292 3568 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3550 3450 50  0001 C CNN
 F 3 "~" H 3550 3450 50  0001 C CNN
 	1    3350 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5C84A9FB
-P 3350 3550
-F 0 "TP2" V 3350 3900 50  0000 R CNN
-F 1 "TestPoint" H 3292 3668 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3550 3550 50  0001 C CNN
-F 3 "~" H 3550 3550 50  0001 C CNN
-	1    3350 3550
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1929,13 +1914,6 @@ Wire Wire Line
 Connection ~ 3200 3150
 Wire Wire Line
 	3200 3150 3300 3150
-Wire Wire Line
-	3350 3550 3150 3550
-Wire Wire Line
-	3150 3550 3150 3250
-Connection ~ 3150 3250
-Wire Wire Line
-	3150 3250 3300 3250
 Wire Wire Line
 	3350 3650 3100 3650
 Wire Wire Line
@@ -2189,4 +2167,5 @@ $EndComp
 NoConn ~ 1250 2850
 NoConn ~ 1250 2750
 NoConn ~ 1250 2250
+NoConn ~ 2850 3250
 $EndSCHEMATC
