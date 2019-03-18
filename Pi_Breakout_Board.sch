@@ -406,17 +406,6 @@ $EndComp
 Text Notes 650  6800 0    50   ~ 0
 board corner holes
 $Comp
-L Driver_LED:PCA9685PW U1
-U 1 1 5C5A4745
-P 3150 6150
-F 0 "U1" H 3150 7328 50  0000 C CNN
-F 1 "PCA9685PW" H 3150 7237 50  0000 C CNN
-F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 3175 5175 50  0001 L CNN
-F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 2750 6850 50  0001 C CNN
-	1    3150 6150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_NMOS_GDSD Q1
 U 1 1 5C5A4BDE
 P 4900 5450
@@ -831,9 +820,6 @@ NoConn ~ 3850 6350
 NoConn ~ 3850 6450
 NoConn ~ 3850 6550
 NoConn ~ 3850 6650
-NoConn ~ 3850 6750
-NoConn ~ 3850 6850
-NoConn ~ 3850 6950
 $Comp
 L Device:C C1
 U 1 1 5C6BFDDE
@@ -1976,8 +1962,6 @@ Wire Wire Line
 	4800 1350 4800 1400
 Wire Wire Line
 	4800 1700 4800 1750
-Text GLabel 1250 2450 0    50   Input ~ 0
-LED_GREEN
 Wire Wire Line
 	1650 4150 1750 4150
 Connection ~ 1750 4150
@@ -2005,10 +1989,6 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 	1    2050 2850
 	1    0    0    -1  
 $EndComp
-Text GLabel 1250 3150 0    50   Input ~ 0
-LED_YELLOW
-Text GLabel 1250 3250 0    50   Input ~ 0
-LED_RED
 $Comp
 L Device:LED D2
 U 1 1 5C854E19
@@ -2179,4 +2159,24 @@ F 3 "~" H 10650 4900 50  0001 C CNN
 $EndComp
 Text Notes 5600 1600 1    50   ~ 0
 Status Indicators
+$Comp
+L Driver_LED:PCA9685PW U1
+U 1 1 5C5A4745
+P 3150 6150
+F 0 "U1" H 3150 7328 50  0000 C CNN
+F 1 "PCA9685PW" H 3150 7237 50  0000 C CNN
+F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 3175 5175 50  0001 L CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 2750 6850 50  0001 C CNN
+	1    3150 6150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 2450 0    50   Input ~ 0
+LED_GREEN
+Text GLabel 1250 3250 0    50   Input ~ 0
+LED_RED
+Text GLabel 1250 3150 0    50   Input ~ 0
+LED_YELLOW
+NoConn ~ 3850 6750
+NoConn ~ 3850 6850
+NoConn ~ 3850 6950
 $EndSCHEMATC
