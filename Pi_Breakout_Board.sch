@@ -1275,9 +1275,9 @@ $EndComp
 Wire Wire Line
 	5150 4500 5150 4600
 NoConn ~ 4650 3600
-Text Notes 7200 6900 0    157  ~ 0
-Property GA/Team OTheRS
-Text Notes 7400 7500 0    50   ~ 0
+Text Notes 7050 7100 0    157  ~ 31
+GA / Team OTheRS\nJacob Killelea
+Text Notes 7350 7550 0    118  ~ 0
 Pi Breakout Board
 Text Notes 10600 7650 0    50   ~ 0
 3
